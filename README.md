@@ -18,11 +18,9 @@ jobs:
   action:
     runs-on: ubuntu-latest
     steps:
-      - name: Get Latest Version
-        uses: actions/checkout@v4
-      - name: Run Flow Scanner
-        uses: ./
-        with:
+      - name: Scan Salesforce Flows
+      uses: RubenHalman/lightning-flow-scanner-action@1.0.0
+      with:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
