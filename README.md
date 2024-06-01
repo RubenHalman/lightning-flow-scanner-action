@@ -19,8 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Scan Salesforce Flows
-      uses: RubenHalman/lightning-flow-scanner-action@1.0.0
-      with:
+        uses: RubenHalman/lightning-flow-scanner-action@1.0.0
+        with:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
