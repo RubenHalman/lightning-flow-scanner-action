@@ -25,7 +25,9 @@ jobs:
         with:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
-
+Also ensure the following:
+- Workflows have read and write permissions in the repository for all scopes.
+- Allow GitHub Actions to create and approve pull requests
 
 #### Automatically Runs On Pull Requests: 
 This action will apply automatically on pull requests (PRs) to your repository. When a pull request is opened or updated, the action will scan Salesforce Flows in the PR's changed files and report any violations.
@@ -40,13 +42,6 @@ To run the action manually, follow these steps:
 
 ## Development Setup
 
-#### Repository Configuration
-
-Ensure the following:
-- Workflows have read and write permissions in the repository for all scopes.
-- Allow GitHub Actions to create and approve pull requests
-
-#### Debug Locally with Act
 To debug the action locally you need to ensure you have `npm` and `act` installed and follow these steps:
 
 1. Create a local secrets file: Create a .secrets file in the root of your repository with the following content:
