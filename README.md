@@ -2,6 +2,9 @@
 
 ![Demo GIF](media/lfsaction.gif)
 
+_Additional information on the engine can be found in the [Lightning Flow Scanner Documentation](https://lightning-flow-scanner.github.io/lightning-flow-scanner-core/)._
+
+
 ## Usage
 
 To use this action in your workflow, create a file named `.github/workflows/lightning-flow-scanner.yml` with the following content:
