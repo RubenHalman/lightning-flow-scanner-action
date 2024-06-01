@@ -1,0 +1,10 @@
+name: Scan Salesforce Flows
+description: A GitHub Action to scan Salesfoce .flow and .flow-meta.xml files using Lightning Flow Scanner.
+inputs:
+  GITHUB_TOKEN:
+    description: "GitHub access token"
+    required: true
+    default: ${{ github.token }}
+runs:
+  using: node16
+  main: "dist/index.js"
